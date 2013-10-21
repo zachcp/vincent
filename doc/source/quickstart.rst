@@ -37,7 +37,9 @@ You can also control aspects of the layout::
     bar.axis_titles(x='Index', y='Value')
     #rotate x axis labels
     ax = AxisProperties(
-             labels = PropertySet(angle=ValueRef(value=90)))
+             labels = PropertySet(angle=ValueRef(value=90),
+                                  align=ValueRef(value="bottom"),
+                                  baseline=ValueRef(value="middle")))
     bar.axes[0].properties = ax
 	
 .. image:: /images/quick_bar3.png
